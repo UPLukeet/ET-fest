@@ -1,0 +1,79 @@
+#name {
+     font-size: 55px;
+	 color: #8f031b;
+	 padding-top: 1.5%;
+	 font-family: 'Acme';
+}
+
+body {
+   background-image: url("lightfestival.jpg");
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-attachment: fixed;
+   background-size: cover;
+}
+
+#navBar {
+	opacity: 0.9;
+	line-height: 100px;
+}
+
+.textBox {
+	 background-color: rgba(169, 169, 169, 0.8);
+	 background-position: center;
+     padding: 15px;
+     height: auto; 
+	 text-align: center;
+	 font-family: 'Acme';
+	 font-size: 25px;
+	 margin-left: 5%;
+	 margin-right: 5%;
+	 
+}
+#hippy {
+	display: block;
+	height: 10%;
+	width: 10%;
+	max-width: 300px;
+	min-width: 150px;
+	border-radius: 75px;
+	padding-top: 1%;
+	right-margin: auto;
+	left-margin: auto;
+}
+
+#buttons {
+	vertical-align: middle;
+	padding-top: 2%;
+	font-family: 'Acme';
+	font-size: 20px;
+}
+
+h1 {
+	font-family: 'Acme';
+}
+
+#gif {
+	height:150px;
+	width:40%;
+}
+#buy {
+	background-color: orange;
+	opacity: 100%;
+}
+
+#map {
+	opacity: 120%;
+}
+.artist {
+	background-color:#fff;
+}
+.artpic {
+	
+	border-radius: 50%;
+	width: 75%;
+	max-width: 300px;
+	min-width: 200px;
+	
+}
+	

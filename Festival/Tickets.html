@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+ <title> ET-fest</title>
+ 
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+ <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ 
+ <link rel="stylesheet" href="festival.css">
+ 
+ <link href="https://fonts.googleapis.com/css?family=Acme|Indie+Flower|Oswald|Supermercado+One|Alef" rel="stylesheet">
+ 
+</head>
+
+<body>
+
+<div id="navBar" class="w3-bar w3-orange">
+<span id="name" class="w3-bar-item w3-mobile">ET-fest</span>
+<img id="hippy" class="w3-bar-item w3-mobile" src="hippyman.jpg">
+<span class="w3-right w3-mobile">
+<div id="buttons">
+  <a href="lukesFestival.html" class="w3-bar-item w3-button w3-mobile w3-hover-white">Home</a>
+  <a href="Info.html" class="w3-bar-item w3-button w3-mobile w3-hover-white">Info</a>
+  <a href="Artists.html" class="w3-bar-item w3-button w3-mobile w3-hover-white">Artists</a>
+  <a href="Tickets.html" class="w3-bar-item w3-button w3-mobile w3-hover-white">Tickets</a>
+  <a href="Images.html" class="w3-bar-item w3-button w3-mobile w3-hover-white">Images</a>
+  </div>
+  </div>
+  <br>
+<div class="textBox">
+<h1>Tickets</h1>
+<h1>Per ticket £350</h1>
+<p>Ticket includes:</p>
+<p>Camping pitch </p>
+<p>Shower fatilities</p>
+<p>Three alcoholic beverages</p>
+<input id="input1" min="0" placeholder="Number of tickets" type="number"></input>
+</div>
+<br>
+<div class="textBox">
+<h1>Luxury Tickets</h1>
+<h1>Per ticket £400</h1>
+<p>Ticket includes:</p>
+<p>Tepee for the weekend</p>
+<p>Shower fatilities</p>
+<p>Three alcoholic beverages</p>
+<p>Vip access for certain areas</p>
+<input id="input2" min="0" placeholder="Number of tickets" type="number"></input>
+</div>
+<br>
+<div class="textBox">
+<h1 id="thank"></h1>
+<input id="buy" type="button" value="Buy">
+</div>
+<script language="javascript">
+    
+	var btn = document.getElementById('buy');
+	btn.addEventListener('click', updateBtn);
+	
+function updateBtn(){
+    var txt = document.getElementById('thank');
+    var A = document.getElementById("input1").value;
+	var B = document.getElementById("input2").value;
+	var C = (A*"350")+(B*"400");
+	if(C == "0"){
+	alert("No items in basket")
+	txt.innerHTML = document.write=(C) + " GBP";
+}else{
+	txt.innerHTML = document.write=(C) + " GBP";
+}
+}
+</script>
+	
+	
+				
+</body>
+
+</html>
